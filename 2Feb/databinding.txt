@@ -1,0 +1,12 @@
+Databinding in react refers to connecting the components state or prop with the UI,this allows UI to update dynamically when the data changes.
+2 types of databinding in react: 1.one way(uni-directional using props) 2.two way(using state)
+1. One-Way Data Binding (Unidirectional)
+In React, data typically flows in one direction — from parent components to child components through props. This is called one-way data binding.
+
+2. Two-Way Data Binding
+In a typical two-way data binding scenario, changes to the UI (like user input) automatically update the component's state, and any change in state updates the UI. While React itself is known for one-way data binding, you can implement two-way binding by combining state and event handling.
+
+A common use case for two-way data binding in React is with form elements
+Props are used to pass data from a parent component to a child component. The child cannot modify the props directly, but it can use them to render the UI or trigger functions passed from the parent.
+
+State is used within a component to manage its own data. The state is local to the component and can be updated using setState()    
