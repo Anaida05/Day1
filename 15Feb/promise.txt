@@ -1,0 +1,6 @@
+Promises and async/await are mechanisms in JavaScript for handling asynchronous operations. Promises represent the eventual result of an asynchronous operation, while async/await provides a more synchronous-looking way to work with promises.
+A Promise can be in one of three states:
+Pending: The initial state, representing an operation that hasn't completed yet.
+Fulfilled: The operation completed successfully, and the promise has a resulting value.
+Rejected: The operation failed, and the promise has a reason for the failure.
+async functions always return a promise. The await keyword can only be used inside an async function, and it pauses the execution of the function until the awaited promise is settled (fulfilled or rejected). If the promise is fulfilled, await returns the fulfilled value. If the promise is rejected, await throws an error (which can be caught using a try...catch block). 
