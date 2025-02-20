@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function searchWeather(){
+            console.log("Checking Weather...")
+            setTimeout(()=>searchWeather(),5000)
+        }
+        function searchStockPrices(){
+            console.log("Searching stock prices......")
+            setTimeout(()=>searchStockPrices(),3000)
+        }
+        function sendEmailNotification(){
+            console.log("Sending email notifications.....")
+            setTimeout(()=>sendEmailNotification(),10000)
+        }
+
+        searchWeather();
+        searchStockPrices();
+        sendEmailNotification();
+    </script>
+</body>
+</html>
