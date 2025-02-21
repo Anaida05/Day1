@@ -1,0 +1,23 @@
+<!--OUTERHTML-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="fheading">Hello</h2>  <!--Can change this with document.getElementById("fheading").innerHTML = "Hello World"-->
+    <div id="fdiv">My div</div>
+    <script>
+        let a = document.getElementById("fheading");
+        console.log(a.outerHTML ,"outerHTML");
+
+        console.log(a.innerHTML,"innerHTML")
+
+        //to replace the whole element with outerHtml
+        let b = document.getElementById("fdiv");
+        b.outerHTML = "<p>New P element</p>"
+    </script>
+</body>
+</html>

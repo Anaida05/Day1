@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="background-color: red;margin: 5px  ;">
+        hello world
+        <div id="myDiv" style="background-color: yellow;padding: 3rem;">
+            <p>First</p>
+            <p>Second</p>
+            <p>Third</p>
+        </div>
+    </div>
+    <script>
+        let newElement = document.createElement("span");
+        newElement.textContent = "Good Morning";
+        console.log(newElement);
+
+        let myDiv = document.querySelector("#myDiv");
+        // myDiv.insertAdjacentElement("beforebegin",newElement)   //just before the next div begins
+        // myDiv.insertAdjacentElement("afterbegin",newElement) //just on top,as soon as the next div begins
+        // myDiv.insertAdjacentElement("beforeend",newElement) //just before the next div ends
+        // myDiv.insertAdjacentElement("afterEnd",newElement) //after the next div ends
+        
+    </script>
+</body>
+</html>
