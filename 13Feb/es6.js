@@ -27,6 +27,9 @@
 //destructing assignment ->array and object
 
 let fruits = ["apple", "orange", "grapes"]
+console.log(fruits)
+const [one,two,three,four = "mango"] = fruits;
+console.log(four)
 //trditonal way
 // const one = fruits[0] 
 // const two = fruits[1] 
