@@ -1,0 +1,4 @@
+Highest Precedence
+Parentheses () have the highest precedence, so expressions inside them are evaluated first.
+Lowest Precedence
+The comma , operator has the lowest precedence.
