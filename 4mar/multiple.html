@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugger Example - To-Do List</title>
+</head>
+<body>
+
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button id="addTaskBtn">Add Task</button>
+
+    <ul id="taskList"></ul>
+
+    <script>
+        const taskInput = document.getElementById("taskInput");
+        const addTaskBtn = document.getElementById("addTaskBtn");
+        const taskList = document.getElementById("taskList");
+
+        let tasks = [];
+
+        function addTask() {
+            let taskText = taskInput.value.trim();
+            
+            debugger;
+            if (taskText === "") {
+                console.log("Task cannot be empty!");
+                return;
+            }
+
+            tasks.push(taskText); 
+            
+            debugger; 
+            renderTasks();
+            taskInput.value = ""; 
+        }
+
+        function removeTask(index) {
+            debugger; 
+            tasks.splice(index, 1); 
+
+            debugger; 
+            renderTasks(); 
+        }
+
+        function renderTasks() {
+            taskList.innerHTML = ""; 
+            
+            tasks.forEach((task, index) => {
+                let li = document.createElement("li");
+                li.textContent = task;
+
+                let removeBtn = document.createElement("button");
+                removeBtn.textContent = "Remove";
+                removeBtn.onclick = function () {
+                    removeTask(index);
+                };
+
+                li.appendChild(removeBtn);
+                taskList.appendChild(li);
+            });
+
+            debugger; 
+        }
+
+        addTaskBtn.addEventListener("click", addTask);
+
+    </script>
+
+</body>
+</html>
