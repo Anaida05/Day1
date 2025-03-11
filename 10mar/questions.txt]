@@ -1,0 +1,45 @@
+Reverse a String
+Input: "hello"
+Output: "olleh"
+
+Check if a String is a Palindrome
+Input: "madam"
+Output: true
+Input: "hello"
+Output: false
+
+Count Vowels in a String
+Input: "javascript"
+Output: 3 (a, i, a)
+
+Remove Duplicates from a String
+Input: "aabbcc"
+Output: "abc"
+
+Find the First Non-Repeating Character
+Input: "aabccd"
+Output: "b"
+
+Find the Most Frequent Character
+Input: "apple"
+Output: "p"
+
+Check if Two Strings are Anagrams
+Input: "listen", "silent"
+Output: true
+Input: "hello", "world"
+Output: false
+
+Capitalize the First Letter of Each Word
+Input: "hello world"
+Output: "Hello World"
+
+Find the Longest Word in a Sentence
+Input: "I love programming"
+Output: "programming"
+
+Check if a String Contains Only Digits
+Input: "12345"
+Output: true
+Input: "123a5"
+Output: false
