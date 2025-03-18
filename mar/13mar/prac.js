@@ -36,5 +36,6 @@
 //   console.log(this);
 // }
 // abc()
- a = 19;
-console.log(this.a)
+
+//  a = 19;
+// console.log(this.a)
