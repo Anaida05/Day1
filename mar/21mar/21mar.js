@@ -64,7 +64,6 @@
 //   console.log(error)
 // })
 
-
 // promise.all
 // const p1 = new Promise((resolve, reject) => {
 //   setTimeout(() => {
@@ -92,7 +91,6 @@
 //     return console.log(error);
 //   });
 
-
 // race
 // const p1 = new Promise((resolve,reject)=>{
 //   setTimeout(()=>{
@@ -115,3 +113,81 @@
 // })
 
 // promise allSettled
+// const p1 = new Promise((resolve,reject)=>{
+//   setTimeout(()=>{
+//       resolve("1 sec")
+//   },1000)
+// })
+
+// const p2 = new Promise((resolve,reject)=>{
+//   setTimeout(()=>{
+//       reject("2 sec")
+//   },2000)
+// })
+
+// const p3 = new Promise((resolve,reject)=>{
+//   setTimeout(()=>{
+//       resolve("3 sec")
+//   })
+// },3000)
+
+// Promise.allSettled([p1,p2,p3])
+// .then((value)=>{
+//   console.log(value)
+// })
+// .catch((value)=>{
+//   console.log(value)
+// })
+
+// promise any
+const p1 = new Promise((resolve,reject)=>{
+  setTimeout(()=>{
+    resolve("2 sec")
+  },2000)
+})
+
+const p2 = new Promise((resolve,reject)=>{
+  setTimeout(()=>{
+    reject("1 sec")
+  },1000)
+})
+
+Promise.any([p1,p2])
+.then((data)=>{
+  console.log(data)
+})
+.catch((error)=>{
+  console.log(error)
+})
+
+// {
+//   let abc = 10;
+//   const a = 2;
+//   var c = 10
+//   console.log(abc);
+//   console.log(a);
+//   console.log(c);
+// }
+// console.log(c);
+
+let a = 10;
+a = 20;
+
+// console.log(a);
+
+// const abc = (a, b) => a + b;
+// console.log(abc(10,20))
+
+// let str = `shsuhdhsidi
+// jsodjsd
+// ldjasdoask`;
+// console.log(str);
+
+// let name = "anaida";
+// console.log(`${name}`);
+
+// function greet() {
+//    return "helllo";
+// }
+
+// console.log(`${greet()} ${name}`);
