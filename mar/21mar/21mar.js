@@ -191,3 +191,25 @@ a = 20;
 // }
 
 // console.log(`${greet()} ${name}`);
+
+let n = 1;
+ let flowerbed = [1,0,0,0,1]
+var canPlaceFlowers = function(flowerbed, n) {
+    let count = 0;
+    for(let i = 0; i < flowerbed.length; i++) {
+        if(flowerbed[i]===0){
+            let left = (i === 0) ? 0 : (flowerbed[i-1]);
+            let right = (i === flowerbed.length-1) ? 0 : (flowerbed[i+1]);
+            if(left===0 && right===0){
+                flowerbed[i] = 1;
+                count++
+            if(count>=n){
+                return true;
+            }
+            }
+
+        }
+    }
+    return count>=n
+};
+canPlaceFlowers(flowerbed,n)
